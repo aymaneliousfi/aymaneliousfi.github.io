@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أيمن اليوسفي | خدمات هندسية وتقنية</title>
+    <title>أيمن اليوسفي | خدمات هندسية وتعليمية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1a2a6c; /* كحلي */
-            --secondary: #b21f1f; /* أحمر */
-            --gold: #fdbb2d; /* ذهبي */
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --gold: #fdbb2d;
             --dark: #2c3e50;
             --bg: #f4f7f6;
         }
@@ -32,8 +32,8 @@
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         }
 
-        header h1 { margin: 0; font-size: 3rem; font-weight: 900; }
-        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 10px auto; }
+        header h1 { margin: 0; font-size: 2.8rem; font-weight: 900; }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 15px auto; line-height: 1.8; }
 
         .cta-btn {
             background: var(--gold); color: var(--primary);
@@ -44,10 +44,8 @@
         }
         .cta-btn:hover { transform: translateY(-5px); }
 
-        /* Containers */
         .container { max-width: 1100px; margin: -60px auto 50px; padding: 0 20px; position: relative; z-index: 10; }
         
-        /* Titles */
         .section-title {
             text-align: center; margin: 60px 0 30px; color: var(--primary);
             font-weight: 900; font-size: 2rem; position: relative;
@@ -57,12 +55,10 @@
             background: var(--gold); margin: 10px auto 0; border-radius: 5px;
         }
 
-        /* Grid System */
         .gallery {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;
         }
 
-        /* Portfolio Cards */
         .card {
             background: white; border-radius: 15px; overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s;
@@ -73,26 +69,23 @@
         .card h3 { color: var(--primary); margin: 0 0 10px; font-size: 1.3rem; }
         .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
         
-        /* Service Cards */
+        /* Service Cards Style */
         .service-card {
-            background: white; border-radius: 15px; padding: 30px;
+            background: white; border-radius: 15px; padding: 25px;
             text-align: center; border-top: 5px solid var(--primary);
             box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
             display: flex; flex-direction: column; justify-content: space-between;
         }
-        .service-card:hover { transform: scale(1.03); border-color: var(--gold); }
-        .service-icon { font-size: 3rem; color: var(--primary); margin-bottom: 20px; }
-        
-        .service-desc { font-size: 0.95rem; color: #555; margin-bottom: 25px; }
-
+        .service-card:hover { transform: scale(1.02); border-color: var(--gold); }
+        .service-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+        .service-desc { font-size: 0.9rem; color: #555; margin-bottom: 20px; }
         .order-btn {
             display: block; border: 2px solid var(--primary); color: var(--primary);
-            padding: 10px; border-radius: 8px; text-decoration: none; font-weight: bold;
+            padding: 8px; border-radius: 8px; text-decoration: none; font-weight: bold;
             transition: 0.3s; margin-top: auto;
         }
         .order-btn:hover { background: var(--primary); color: white; }
 
-        /* Footer */
         footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; margin-top: 50px; border-top: 1px solid #ddd; }
     </style>
 </head>
@@ -100,109 +93,101 @@
 
     <header>
         <h1>المهندس أيمن اليوسفي</h1>
-        <p>خدمات هندسية، حلول برمجية، واستشارات تقنية متكاملة. نضع الخبرة والتكنولوجيا بين يديك.</p>
+        <p>مهندس متعدد التخصصات: نقدم حلولاً هندسية للشركات، برامج تعليمية للأطفال، واستشارات تقنية للأفراد. نجمع بين الخبرة الأكاديمية والتطبيق العملي.</p>
         <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي الآن</a>
     </header>
 
     <div class="container">
         
-        <h2 class="section-title">معرض الأعمال</h2>
+        <h2 class="section-title">نماذج من أعمالي</h2>
         <div class="gallery">
             <div class="card">
-                <img src="pcb.jpg" alt="PCB Design">
+                <img src="pcb.jpg" alt="PCB">
                 <div class="card-content">
                     <h3>تصميم الدوائر (PCB)</h3>
-                    <p>تصميم احترافي جاهز للتصنيع.</p>
+                    <p>تصميم وتنفيذ دوائر إلكترونية معقدة.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="industrial.jpg" alt="Industrial">
                 <div class="card-content">
                     <h3>الكهرباء الصناعية</h3>
-                    <p>تنفيذ لوحات التحكم وترتيب الكابلات.</p>
+                    <p>لوحات تحكم وأنظمة أتمتة للمصانع.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="arduino.png" alt="Arduino">
                 <div class="card-content">
-                    <h3>برمجة الأردوينو</h3>
-                    <p>كتابة أكواد ومحاكاة المشاريع.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="soldering.jpg" alt="Soldering">
-                <div class="card-content">
-                    <h3>النماذج الأولية</h3>
-                    <p>تلحيم وتجميع المكونات بدقة عالية.</p>
+                    <h3>البرمجة والمحاكاة</h3>
+                    <p>مشاريع ذكية باستخدام Arduino & IoT.</p>
                 </div>
             </div>
         </div>
 
-        <h2 class="section-title">الخدمات المتاحة</h2>
+        <h2 class="section-title">قائمة الخدمات</h2>
         <div class="gallery">
             
             <div class="service-card" style="border-top-color: #27ae60;">
-                <i class="fas fa-robot service-icon" style="color: #27ae60;"></i>
-                <h3>مدرب البرمجة للأطفال</h3>
-                <p class="service-desc">تعليم الأطفال (6-14 سنة) أساسيات البرمجة باستخدام Scratch والأردوينو بأسلوب ممتع وتفاعلي.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بتعليم البرمجة للأطفال" class="order-btn">حجز حصة تجريبية</a>
+                <i class="fas fa-gamepad service-icon" style="color: #27ae60;"></i>
+                <h3>برمجة للأطفال (Scratch)</h3>
+                <p class="service-desc">دورة ممتعة لتعليم الأطفال (6-14 سنة) المنطق البرمجي وصناعة الألعاب.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، بخصوص دورة البرمجة للأطفال" class="order-btn">حجز حصة</a>
             </div>
 
             <div class="service-card" style="border-top-color: #e67e22;">
                 <i class="fas fa-bolt service-icon" style="color: #e67e22;"></i>
-                <h3>تحليل الدوائر الكهربائية</h3>
-                <p class="service-desc">مساعدة الطلاب في حل مسائل الدوائر المعقدة (RLC, RC, RL) وشرح المفاهيم الأكاديمية.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج مساعدة في Circuit Analysis" class="order-btn">طلب مساعدة</a>
+                <h3>دروس دعم هندسية</h3>
+                <p class="service-desc">شرح وتبسيط مواد تحليل الدوائر (Circuit Analysis) لطلاب الهندسة والمعاهد.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج دعم في Circuit Analysis" class="order-btn">طلب درس</a>
             </div>
 
             <div class="service-card" style="border-top-color: #c0392b;">
-                <i class="fas fa-dumbbell service-icon" style="color: #c0392b;"></i>
-                <h3>برامج اللياقة والتغذية</h3>
-                <p class="service-desc">تصميم جداول تدريب وأنظمة غذائية محسوبة السعرات (للتضخيم أو التنشيف) تناسب ميزانيتك.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، أريد برنامج تدريب وغذاء" class="order-btn">صمم برنامجي</a>
+                <i class="fas fa-heartbeat service-icon" style="color: #c0392b;"></i>
+                <h3>برامج تدريب وتغذية</h3>
+                <p class="service-desc">تصميم جداول رياضية وغذائية مخصصة وعلمية تناسب هدفك وميزانيتك.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، بخصوص برنامج التدريب" class="order-btn">ابنِ جسمك</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-laptop-medical service-icon"></i>
+                <h3>الصيانة والدعم التقني</h3>
+                <p class="service-desc">صيانة الحواسيب (Format)، تسريع الأجهزة، وتثبيت البرامج الهندسية.</p>
+                <a href="https://wa.me/212710499663?text=أحتاج صيانة للحاسوب" class="order-btn">طلب صيانة</a>
             </div>
 
             <div class="service-card" style="border-top-color: #8e44ad;">
-                <i class="fas fa-book-open service-icon" style="color: #8e44ad;"></i>
+                <i class="fas fa-language service-icon" style="color: #8e44ad;"></i>
                 <h3>الترجمة التقنية</h3>
-                <p class="service-desc">ترجمة الكتالوجات (Datasheets) والوثائق الهندسية من الإنجليزية إلى العربية بدقة علمية.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، لدي ملف تقني للترجمة" class="order-btn">طلب ترجمة</a>
+                <p class="service-desc">ترجمة الكتالوجات والوثائق الهندسية (Datasheets) بدقة فنية عالية.</p>
+                <a href="https://wa.me/212710499663?text=لدي ملف للترجمة" class="order-btn">ترجم ملفك</a>
             </div>
 
             <div class="service-card">
-                <i class="fas fa-tools service-icon"></i>
-                <h3>الدعم التقني والصيانة</h3>
-                <p class="service-desc">صيانة الحواسيب (Format)، تثبيت البرامج الهندسية (AutoCAD/Office)، واسترجاع الملفات.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج صيانة للحاسوب" class="order-btn">طلب دعم</a>
+                <i class="fas fa-file-alt service-icon"></i>
+                <h3>تنسيق الوثائق (Office)</h3>
+                <p class="service-desc">رقمنة الكتابة اليدوية وتنسيق البحوث والتقارير بأسلوب احترافي.</p>
+                <a href="https://wa.me/212710499663?text=لدي وثائق للتنسيق" class="order-btn">طلب تنسيق</a>
             </div>
 
-            <div class="service-card">
-                <i class="fas fa-file-word service-icon"></i>
-                <h3>المساعد الرقمي (Office)</h3>
-                <p class="service-desc">رقمنة الوثائق اليدوية (Word/PDF/Excel) وتنسيق البحوث والتقارير الأكاديمية.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، لدي وثائق تحتاج للتنسيق" class="order-btn">تواصل للخدمة</a>
+             <div class="service-card" style="background: #f8f9fa;">
+                <i class="fas fa-user-graduate service-icon" style="color: var(--primary);"></i>
+                <h3>مشاريع التخرج (PFE)</h3>
+                <p class="service-desc">المساعدة الشاملة: الكود + المحاكاة + العرض التقديمي (PPT).</p>
+                <a href="https://wa.me/212710499663?text=استفسار PFE" class="order-btn">استفسار</a>
             </div>
 
-            <div class="service-card" style="background-color: #fcfcfc;">
-                <i class="fas fa-graduation-cap service-icon" style="color: var(--primary);"></i>
-                <h3>باقة مشاريع التخرج (PFE)</h3>
-                <p class="service-desc">للمهندسين: الكود + المحاكاة + تصميم العرض التقديمي (PPT) والتقرير.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">استفسار PFE</a>
-            </div>
-
-            <div class="service-card" style="background-color: #fcfcfc;">
+            <div class="service-card" style="background: #f8f9fa;">
                 <i class="fas fa-microchip service-icon" style="color: var(--primary);"></i>
-                <h3>تصميم وتصنيع PCB</h3>
-                <p class="service-desc">تصميم الدوائر الإلكترونية وتصدير ملفات Gerber للمصانع والشركات.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، أريد تصميم PCB" class="order-btn">طلب تصميم</a>
+                <h3>تصميم PCB</h3>
+                <p class="service-desc">تحويل المخططات إلى بوردات احترافية جاهزة للتصنيع.</p>
+                <a href="https://wa.me/212710499663?text=تصميم PCB" class="order-btn">طلب تصميم</a>
             </div>
 
         </div>
-
     </div>
 
     <footer>
-        <p>&copy; 2025 Aymane Liousfi | Engineering Solutions</p>
+        <p>&copy; 2025 Aymane Liousfi | All Rights Reserved</p>
     </footer>
 
 </body>
