@@ -30,6 +30,7 @@
             padding: 80px 20px 100px;
             text-align: center;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative; /* ضروري لتموضع الزر */
         }
 
         header h1 { margin: 0; font-size: 2.8rem; font-weight: 900; }
@@ -92,6 +93,10 @@
 <body>
 
     <header>
+        <a href="fr.html" style="position: absolute; top: 20px; left: 20px; color: white; border: 1px solid white; padding: 5px 15px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s;" onmouseover="this.style.background='white'; this.style.color='#1a2a6c';" onmouseout="this.style.background='transparent'; this.style.color='white';">
+            Français 🇫🇷
+        </a>
+
         <h1>المهندس أيمن اليوسفي</h1>
         <p>مهندس متعدد التخصصات: نقدم حلولاً هندسية للشركات، برامج تعليمية للأطفال، واستشارات تقنية للأفراد. نجمع بين الخبرة الأكاديمية والتطبيق العملي.</p>
         <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي الآن</a>
