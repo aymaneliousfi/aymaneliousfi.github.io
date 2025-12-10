@@ -73,7 +73,7 @@
         .card h3 { color: var(--primary); margin: 0 0 10px; font-size: 1.3rem; }
         .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
         
-        /* Service Cards (Updated) */
+        /* Service Cards */
         .service-card {
             background: white; border-radius: 15px; padding: 30px;
             text-align: center; border-top: 5px solid var(--primary);
@@ -83,7 +83,6 @@
         .service-card:hover { transform: scale(1.03); border-color: var(--gold); }
         .service-icon { font-size: 3rem; color: var(--primary); margin-bottom: 20px; }
         
-        /* Price removed, adjusted spacing */
         .service-desc { font-size: 0.95rem; color: #555; margin-bottom: 25px; }
 
         .order-btn {
@@ -101,7 +100,7 @@
 
     <header>
         <h1>المهندس أيمن اليوسفي</h1>
-        <p>خدمات هندسية وحلول تقنية متكاملة للأفراد والشركات. دقة في التنفيذ واحترافية في الأداء.</p>
+        <p>خدمات هندسية، حلول برمجية، واستشارات تقنية متكاملة. نضع الخبرة والتكنولوجيا بين يديك.</p>
         <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي الآن</a>
     </header>
 
@@ -142,39 +141,60 @@
         <h2 class="section-title">الخدمات المتاحة</h2>
         <div class="gallery">
             
-            <div class="service-card" style="border-top-color: var(--secondary);">
-                <i class="fas fa-tools service-icon" style="color: var(--secondary);"></i>
-                <h3>الصيانة والدعم التقني</h3>
-                <p class="service-desc">صيانة الحواسيب (Format)، تسريع الأجهزة، تثبيت البرامج الهندسية (AutoCAD/Office)، واسترجاع الملفات.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج مساعدة في صيانة الحاسوب" class="order-btn">طلب دعم تقني</a>
+            <div class="service-card" style="border-top-color: #27ae60;">
+                <i class="fas fa-robot service-icon" style="color: #27ae60;"></i>
+                <h3>مدرب البرمجة للأطفال</h3>
+                <p class="service-desc">تعليم الأطفال (6-14 سنة) أساسيات البرمجة باستخدام Scratch والأردوينو بأسلوب ممتع وتفاعلي.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بتعليم البرمجة للأطفال" class="order-btn">حجز حصة تجريبية</a>
             </div>
 
-            <div class="service-card" style="border-top-color: var(--secondary);">
-                <i class="fas fa-file-word service-icon" style="color: var(--secondary);"></i>
-                <h3>المساعد الرقمي والأكاديمي</h3>
-                <p class="service-desc">رقمنة الوثائق المكتوبة بخط اليد (Word/PDF)، تنسيق البحوث والتقارير، وإدارة جداول Excel.</p>
+            <div class="service-card" style="border-top-color: #e67e22;">
+                <i class="fas fa-bolt service-icon" style="color: #e67e22;"></i>
+                <h3>تحليل الدوائر الكهربائية</h3>
+                <p class="service-desc">مساعدة الطلاب في حل مسائل الدوائر المعقدة (RLC, RC, RL) وشرح المفاهيم الأكاديمية.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج مساعدة في Circuit Analysis" class="order-btn">طلب مساعدة</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: #c0392b;">
+                <i class="fas fa-dumbbell service-icon" style="color: #c0392b;"></i>
+                <h3>برامج اللياقة والتغذية</h3>
+                <p class="service-desc">تصميم جداول تدريب وأنظمة غذائية محسوبة السعرات (للتضخيم أو التنشيف) تناسب ميزانيتك.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أريد برنامج تدريب وغذاء" class="order-btn">صمم برنامجي</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: #8e44ad;">
+                <i class="fas fa-book-open service-icon" style="color: #8e44ad;"></i>
+                <h3>الترجمة التقنية</h3>
+                <p class="service-desc">ترجمة الكتالوجات (Datasheets) والوثائق الهندسية من الإنجليزية إلى العربية بدقة علمية.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، لدي ملف تقني للترجمة" class="order-btn">طلب ترجمة</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>الدعم التقني والصيانة</h3>
+                <p class="service-desc">صيانة الحواسيب (Format)، تثبيت البرامج الهندسية (AutoCAD/Office)، واسترجاع الملفات.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج صيانة للحاسوب" class="order-btn">طلب دعم</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-file-word service-icon"></i>
+                <h3>المساعد الرقمي (Office)</h3>
+                <p class="service-desc">رقمنة الوثائق اليدوية (Word/PDF/Excel) وتنسيق البحوث والتقارير الأكاديمية.</p>
                 <a href="https://wa.me/212710499663?text=مرحبا، لدي وثائق تحتاج للتنسيق" class="order-btn">تواصل للخدمة</a>
             </div>
 
-            <div class="service-card">
-                <i class="fas fa-graduation-cap service-icon"></i>
+            <div class="service-card" style="background-color: #fcfcfc;">
+                <i class="fas fa-graduation-cap service-icon" style="color: var(--primary);"></i>
                 <h3>باقة مشاريع التخرج (PFE)</h3>
-                <p class="service-desc">مساعدة شاملة لطلاب الهندسة: الكود + المحاكاة + تصميم العرض التقديمي (PPT).</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">استفسار عن PFE</a>
+                <p class="service-desc">للمهندسين: الكود + المحاكاة + تصميم العرض التقديمي (PPT) والتقرير.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">استفسار PFE</a>
             </div>
 
-            <div class="service-card">
-                <i class="fas fa-microchip service-icon"></i>
+            <div class="service-card" style="background-color: #fcfcfc;">
+                <i class="fas fa-microchip service-icon" style="color: var(--primary);"></i>
                 <h3>تصميم وتصنيع PCB</h3>
                 <p class="service-desc">تصميم الدوائر الإلكترونية وتصدير ملفات Gerber للمصانع والشركات.</p>
                 <a href="https://wa.me/212710499663?text=مرحبا، أريد تصميم PCB" class="order-btn">طلب تصميم</a>
-            </div>
-
-             <div class="service-card">
-                <i class="fas fa-industry service-icon"></i>
-                <h3>الأتمتة الصناعية</h3>
-                <p class="service-desc">حلول التحكم الكهربائي للمصانع والورش وبرمجة الأنظمة.</p>
-                <a href="https://wa.me/212710499663?text=مرحبا، لدي مشروع صناعي" class="order-btn">تواصل معنا</a>
             </div>
 
         </div>
