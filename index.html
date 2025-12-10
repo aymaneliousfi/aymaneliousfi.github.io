@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أيمن اليوسفي | حلول هندسية متكاملة</title>
+    <title>أيمن اليوسفي | خدمات هندسية وتقنية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -73,19 +73,23 @@
         .card h3 { color: var(--primary); margin: 0 0 10px; font-size: 1.3rem; }
         .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
         
-        /* Service Cards (New) */
+        /* Service Cards (Updated) */
         .service-card {
             background: white; border-radius: 15px; padding: 30px;
             text-align: center; border-top: 5px solid var(--primary);
             box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+            display: flex; flex-direction: column; justify-content: space-between;
         }
         .service-card:hover { transform: scale(1.03); border-color: var(--gold); }
         .service-icon { font-size: 3rem; color: var(--primary); margin-bottom: 20px; }
-        .price { color: var(--secondary); font-weight: bold; font-size: 1.1rem; margin: 15px 0; }
+        
+        /* Price removed, adjusted spacing */
+        .service-desc { font-size: 0.95rem; color: #555; margin-bottom: 25px; }
+
         .order-btn {
             display: block; border: 2px solid var(--primary); color: var(--primary);
-            padding: 8px; border-radius: 8px; text-decoration: none; font-weight: bold;
-            transition: 0.3s;
+            padding: 10px; border-radius: 8px; text-decoration: none; font-weight: bold;
+            transition: 0.3s; margin-top: auto;
         }
         .order-btn:hover { background: var(--primary); color: white; }
 
@@ -97,8 +101,8 @@
 
     <header>
         <h1>المهندس أيمن اليوسفي</h1>
-        <p>نحول الأفكار الهندسية إلى واقع. متخصصون في تصميم الدوائر المطبوعة (PCB)، الأتمتة الصناعية، وحلول إنترنت الأشياء (IoT).</p>
-        <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي للمشاريع</a>
+        <p>خدمات هندسية وحلول تقنية متكاملة للأفراد والشركات. دقة في التنفيذ واحترافية في الأداء.</p>
+        <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي الآن</a>
     </header>
 
     <div class="container">
@@ -109,56 +113,67 @@
                 <img src="pcb.jpg" alt="PCB Design">
                 <div class="card-content">
                     <h3>تصميم الدوائر (PCB)</h3>
-                    <p>تصميم احترافي (Schematic & Routing) جاهز للتصنيع.</p>
+                    <p>تصميم احترافي جاهز للتصنيع.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="industrial.jpg" alt="Industrial">
                 <div class="card-content">
                     <h3>الكهرباء الصناعية</h3>
-                    <p>تنفيذ لوحات التحكم وترتيب الكابلات (Cable Management).</p>
+                    <p>تنفيذ لوحات التحكم وترتيب الكابلات.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="arduino.png" alt="Arduino">
                 <div class="card-content">
                     <h3>برمجة الأردوينو</h3>
-                    <p>كتابة أكواد ومحاكاة المشاريع (Simulation) قبل التنفيذ.</p>
+                    <p>كتابة أكواد ومحاكاة المشاريع.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="soldering.jpg" alt="Soldering">
                 <div class="card-content">
                     <h3>النماذج الأولية</h3>
-                    <p>تلحيم وتجميع المكونات الإلكترونية بدقة يدوية عالية.</p>
+                    <p>تلحيم وتجميع المكونات بدقة عالية.</p>
                 </div>
             </div>
         </div>
 
-        <h2 class="section-title">باقات الخدمات</h2>
+        <h2 class="section-title">الخدمات المتاحة</h2>
         <div class="gallery">
             
+            <div class="service-card" style="border-top-color: var(--secondary);">
+                <i class="fas fa-tools service-icon" style="color: var(--secondary);"></i>
+                <h3>الصيانة والدعم التقني</h3>
+                <p class="service-desc">صيانة الحواسيب (Format)، تسريع الأجهزة، تثبيت البرامج الهندسية (AutoCAD/Office)، واسترجاع الملفات.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أحتاج مساعدة في صيانة الحاسوب" class="order-btn">طلب دعم تقني</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: var(--secondary);">
+                <i class="fas fa-file-word service-icon" style="color: var(--secondary);"></i>
+                <h3>المساعد الرقمي والأكاديمي</h3>
+                <p class="service-desc">رقمنة الوثائق المكتوبة بخط اليد (Word/PDF)، تنسيق البحوث والتقارير، وإدارة جداول Excel.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، لدي وثائق تحتاج للتنسيق" class="order-btn">تواصل للخدمة</a>
+            </div>
+
             <div class="service-card">
                 <i class="fas fa-graduation-cap service-icon"></i>
                 <h3>باقة مشاريع التخرج (PFE)</h3>
-                <p>مساعدة شاملة: الكود + المحاكاة + تصميم العرض التقديمي (PPT).</p>
-                <div class="price">تبدأ من 200 درهم</div>
-                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">احجز مقعدك</a>
+                <p class="service-desc">مساعدة شاملة لطلاب الهندسة: الكود + المحاكاة + تصميم العرض التقديمي (PPT).</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">استفسار عن PFE</a>
             </div>
 
             <div class="service-card">
                 <i class="fas fa-microchip service-icon"></i>
                 <h3>تصميم وتصنيع PCB</h3>
-                <p>تصميم الدائرة الإلكترونية وتصدير ملفات Gerber للمصانع.</p>
-                <div class="price">حسب تعقيد الدائرة</div>
-                <a href="https://wa.me/212710499663?text=مرحبا، أريد تصميم PCB" class="order-btn">طلب عرض سعر</a>
+                <p class="service-desc">تصميم الدوائر الإلكترونية وتصدير ملفات Gerber للمصانع والشركات.</p>
+                <a href="https://wa.me/212710499663?text=مرحبا، أريد تصميم PCB" class="order-btn">طلب تصميم</a>
             </div>
 
-            <div class="service-card">
+             <div class="service-card">
                 <i class="fas fa-industry service-icon"></i>
-                <h3>حلول الأتمتة الصناعية</h3>
-                <p>تصميم لوحات التحكم للمصانع والورش وبرمجة الأنظمة.</p>
-                <div class="price">استشارة مجانية</div>
+                <h3>الأتمتة الصناعية</h3>
+                <p class="service-desc">حلول التحكم الكهربائي للمصانع والورش وبرمجة الأنظمة.</p>
                 <a href="https://wa.me/212710499663?text=مرحبا، لدي مشروع صناعي" class="order-btn">تواصل معنا</a>
             </div>
 
