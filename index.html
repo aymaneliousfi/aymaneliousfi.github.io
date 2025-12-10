@@ -71,4 +71,104 @@
         .card img { width: 100%; height: 220px; object-fit: cover; }
         .card-content { padding: 20px; text-align: right; }
         .card h3 { color: var(--primary); margin: 0 0 10px; font-size: 1.3rem; }
-        .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px;
+        .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
+        
+        /* Service Cards (New) */
+        .service-card {
+            background: white; border-radius: 15px; padding: 30px;
+            text-align: center; border-top: 5px solid var(--primary);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+        }
+        .service-card:hover { transform: scale(1.03); border-color: var(--gold); }
+        .service-icon { font-size: 3rem; color: var(--primary); margin-bottom: 20px; }
+        .price { color: var(--secondary); font-weight: bold; font-size: 1.1rem; margin: 15px 0; }
+        .order-btn {
+            display: block; border: 2px solid var(--primary); color: var(--primary);
+            padding: 8px; border-radius: 8px; text-decoration: none; font-weight: bold;
+            transition: 0.3s;
+        }
+        .order-btn:hover { background: var(--primary); color: white; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; margin-top: 50px; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>المهندس أيمن اليوسفي</h1>
+        <p>نحول الأفكار الهندسية إلى واقع. متخصصون في تصميم الدوائر المطبوعة (PCB)، الأتمتة الصناعية، وحلول إنترنت الأشياء (IoT).</p>
+        <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معي للمشاريع</a>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">معرض الأعمال</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="pcb.jpg" alt="PCB Design">
+                <div class="card-content">
+                    <h3>تصميم الدوائر (PCB)</h3>
+                    <p>تصميم احترافي (Schematic & Routing) جاهز للتصنيع.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="industrial.jpg" alt="Industrial">
+                <div class="card-content">
+                    <h3>الكهرباء الصناعية</h3>
+                    <p>تنفيذ لوحات التحكم وترتيب الكابلات (Cable Management).</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="arduino.png" alt="Arduino">
+                <div class="card-content">
+                    <h3>برمجة الأردوينو</h3>
+                    <p>كتابة أكواد ومحاكاة المشاريع (Simulation) قبل التنفيذ.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="soldering.jpg" alt="Soldering">
+                <div class="card-content">
+                    <h3>النماذج الأولية</h3>
+                    <p>تلحيم وتجميع المكونات الإلكترونية بدقة يدوية عالية.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">باقات الخدمات</h2>
+        <div class="gallery">
+            
+            <div class="service-card">
+                <i class="fas fa-graduation-cap service-icon"></i>
+                <h3>باقة مشاريع التخرج (PFE)</h3>
+                <p>مساعدة شاملة: الكود + المحاكاة + تصميم العرض التقديمي (PPT).</p>
+                <div class="price">تبدأ من 200 درهم</div>
+                <a href="https://wa.me/212710499663?text=مرحبا، مهتم بباقة PFE" class="order-btn">احجز مقعدك</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-microchip service-icon"></i>
+                <h3>تصميم وتصنيع PCB</h3>
+                <p>تصميم الدائرة الإلكترونية وتصدير ملفات Gerber للمصانع.</p>
+                <div class="price">حسب تعقيد الدائرة</div>
+                <a href="https://wa.me/212710499663?text=مرحبا، أريد تصميم PCB" class="order-btn">طلب عرض سعر</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-industry service-icon"></i>
+                <h3>حلول الأتمتة الصناعية</h3>
+                <p>تصميم لوحات التحكم للمصانع والورش وبرمجة الأنظمة.</p>
+                <div class="price">استشارة مجانية</div>
+                <a href="https://wa.me/212710499663?text=مرحبا، لدي مشروع صناعي" class="order-btn">تواصل معنا</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Aymane Liousfi | Engineering Solutions</p>
+    </footer>
+
+</body>
+</html>
