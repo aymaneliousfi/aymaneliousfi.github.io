@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing. Aymane Liousfi | Solutions d'Ingénierie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --gold: #fdbb2d;
+            --dark: #2c3e50;
+            --bg: #f4f7f6;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary), #2a5298);
+            color: white;
+            padding: 80px 20px 100px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+
+        /* Language Button */
+        .lang-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid white;
+            transition: 0.3s;
+        }
+        .lang-btn:hover { background: white; color: var(--primary); }
+
+        header h1 { margin: 0; font-size: 2.8rem; font-weight: 900; }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 15px auto; line-height: 1.8; }
+
+        .cta-btn {
+            background: var(--gold); color: var(--primary);
+            padding: 12px 35px; border-radius: 50px; text-decoration: none;
+            font-weight: bold; display: inline-block; margin-top: 25px;
+            box-shadow: 0 5px 15px rgba(253, 187, 45, 0.4);
+            transition: transform 0.3s;
+        }
+        .cta-btn:hover { transform: translateY(-5px); }
+
+        .container { max-width: 1100px; margin: -60px auto 50px; padding: 0 20px; position: relative; z-index: 10; }
+        
+        .section-title {
+            text-align: center; margin: 60px 0 30px; color: var(--primary);
+            font-weight: 900; font-size: 2rem; position: relative;
+        }
+        .section-title::after {
+            content: ''; display: block; width: 60px; height: 4px;
+            background: var(--gold); margin: 10px auto 0; border-radius: 5px;
+        }
+
+        .gallery {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;
+        }
+
+        .card {
+            background: white; border-radius: 15px; overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 220px; object-fit: cover; }
+        .card-content { padding: 20px; text-align: left; }
+        .card h3 { color: var(--primary); margin: 0 0 10px; font-size: 1.3rem; }
+        .card p { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
+        
+        /* Service Cards Style */
+        .service-card {
+            background: white; border-radius: 15px; padding: 25px;
+            text-align: center; border-top: 5px solid var(--primary);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+            display: flex; flex-direction: column; justify-content: space-between;
+        }
+        .service-card:hover { transform: scale(1.02); border-color: var(--gold); }
+        .service-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+        .service-desc { font-size: 0.9rem; color: #555; margin-bottom: 20px; }
+        .order-btn {
+            display: block; border: 2px solid var(--primary); color: var(--primary);
+            padding: 8px; border-radius: 8px; text-decoration: none; font-weight: bold;
+            transition: 0.3s; margin-top: auto;
+        }
+        .order-btn:hover { background: var(--primary); color: white; }
+
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; margin-top: 50px; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="lang-btn">🇺🇸 / 🇲🇦 Arabic</a>
+
+        <h1>Ing. Aymane Liousfi</h1>
+        <p>Ingénieur Polyvalent : Solutions industrielles pour entreprises, formation STEM pour enfants, et support technique IT.</p>
+        <a href="https://wa.me/212710499663" class="cta-btn"><i class="fab fa-whatsapp"></i> Contactez-moi</a>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Portfolio</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="pcb.jpg" alt="PCB">
+                <div class="card-content">
+                    <h3>Conception PCB</h3>
+                    <p>Design et routage de cartes électroniques professionnelles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="industrial.jpg" alt="Industrial">
+                <div class="card-content">
+                    <h3>Électricité Industrielle</h3>
+                    <p>Armoires de commande et automatisation.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="arduino.png" alt="Arduino">
+                <div class="card-content">
+                    <h3>Systèmes Embarqués</h3>
+                    <p>Projets IoT et simulation Arduino.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Nos Services</h2>
+        <div class="gallery">
+            
+            <div class="service-card" style="border-top-color: #27ae60;">
+                <i class="fas fa-gamepad service-icon" style="color: #27ae60;"></i>
+                <h3>Coding pour Enfants</h3>
+                <p class="service-desc">Initiation à la programmation (Scratch/Roborique) pour les 6-14 ans.</p>
+                <a href="https://wa.me/212710499663?text=Bonjour, je suis intéressé par les cours pour enfants" class="order-btn">Réserver</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: #e67e22;">
+                <i class="fas fa-bolt service-icon" style="color: #e67e22;"></i>
+                <h3>Soutien Universitaire</h3>
+                <p class="service-desc">Cours de soutien en Analyse de Circuits (RLC, RC) et Électronique.</p>
+                <a href="https://wa.me/212710499663?text=Bonjour, j'ai besoin de soutien scolaire" class="order-btn">Demander</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: #c0392b;">
+                <i class="fas fa-heartbeat service-icon" style="color: #c0392b;"></i>
+                <h3>Coaching & Nutrition</h3>
+                <p class="service-desc">Programmes d'entraînement et plans nutritionnels personnalisés.</p>
+                <a href="https://wa.me/212710499663?text=Bonjour, je veux un programme de sport" class="order-btn">Démarrer</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-laptop-medical service-icon"></i>
+                <h3>Support IT & Maintenance</h3>
+                <p class="service-desc">Formatage PC, installation de logiciels (AutoCAD/Office) et optimisation.</p>
+                <a href="https://wa.me/212710499663?text=J'ai un problème avec mon PC" class="order-btn">Support</a>
+            </div>
+
+            <div class="service-card" style="border-top-color: #8e44ad;">
+                <i class="fas fa-language service-icon" style="color: #8e44ad;"></i>
+                <h3>Traduction Technique</h3>
+                <p class="service-desc">Traduction de datasheets et documents techniques (Anglais/Français/Arabe).</p>
+                <a href="https://wa.me/212710499663?text=J'ai un document à traduire" class="order-btn">Traduire</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-file-alt service-icon"></i>
+                <h3>Assistance Administrative</h3>
+                <p class="service-desc">Numérisation de documents, rédaction de rapports et mise en page.</p>
+                <a href="https://wa.me/212710499663?text=Service bureautique" class="order-btn">Commander</a>
+            </div>
+
+             <div class="service-card" style="background: #f8f9fa;">
+                <i class="fas fa-user-graduate service-icon" style="color: var(--primary);"></i>
+                <h3>Pack PFE (Étudiants)</h3>
+                <p class="service-desc">Accompagnement complet : Code + Simulation + Présentation PPT.</p>
+                <a href="https://wa.me/212710499663?text=Info sur le pack PFE" class="order-btn">Infos PFE</a>
+            </div>
+
+            <div class="service-card" style="background: #f8f9fa;">
+                <i class="fas fa-microchip service-icon" style="color: var(--primary);"></i>
+                <h3>Conception PCB</h3>
+                <p class="service-desc">Design professionnel de circuits imprimés prêts à l'usine.</p>
+                <a href="https://wa.me/212710499663?text=Devis pour PCB" class="order-btn">Demander Devis</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Aymane Liousfi | Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
